@@ -1,0 +1,78 @@
+/* Reset - no more margin, padding... */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* General styling */
+body{
+	color: #fcfcfc;
+	font: 14px 'Segoe UI', Arial, sans-serif;
+	background: #ccc;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+	color: #54a6de;
+}
+
+/* Custom styling */
+.container{
+	width: 70%;
+	margin: 10px auto;
+	overflow: auto;
+}
+
+/* Navigation styling */
+#navbar{
+	display: block;
+	height: 40px;
+	background: #13181d;
+}
+
+#navbar a{
+	color: #fff;
+	display: inline-block;
+	height: 40px;
+	line-height: 37px;
+	padding: 0 15px;
+}
+
+#navbar a.active, #navbar a:hover{
+	background: #333;
+}
+
+/* Container styling */
+#main{
+	display:block;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 475px;
+}
+
+#main li{
+	float: left;
+	height: 305px;
+	list-style:none;
+	position: relative;
+	width: 315px;
+
+}
+
+#main ul{
+	overflow: hidden;
+}
+
+#main ul.hidden{
+	display: none;
+}
+
+footer{
+	text-align: center;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+}
