@@ -1,3 +1,3 @@
 # photo_gallery
 
-Simple photo gallery created in HTML5 & JQuery
+Simple photo gallery created in HTML5 & JQuery (using Quicksand & Fancybox plugin)

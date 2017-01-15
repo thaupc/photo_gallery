@@ -1,50 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Image Gallery with HTML5 and CSS</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html>
+    <head>
+        <title>Photo gallery with HTML5 & CSS</title>    
+		<!-- Main CSS File -->
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+		<!-- Add fancyBox CSS -->
+		<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 
-	<header>
-		<div class='container'>
-			<nav id='navbar'>
-				<a href="#">All items</a>
-				<a href="#">Cat 1</a>
-				<a href="#">Cat 2</a>
-				<a href="#">Cat 3</a>
-			</nav>
-		</div>
-	
-	</header>
-	
-	<section id='main'>
-		<div class='container'>
-			<ul id='gallery'>
-				<li data-tags='Cat 1, Cat 2'> <img src='img/pic1.gif'> </li>
-				<li data-tags='Cat 2, Cat 3'> <img src='img/pic2.gif'> </li>
-				<li data-tags='Cat 1, Cat 3'> <img src='img/pic3.gif'> </li>
-				<li data-tags='Cat 1'> <img src='img/pic4.gif'> </li>
-				<li data-tags='Cat 2'> <img src='img/pic5.gif'> </li>
-				<li data-tags='Cat 3'> <img src='img/pic6.gif'> </li>
-				<li data-tags='Cat 1, Cat 2'> <img src='img/pic7.gif'> </li>
-				<li data-tags='Cat 2, Cat 3'> <img src='img/pic8.gif'> </li>
-				<li data-tags='Cat 1, Cat 3'> <img src='img/pic9.gif'> </li>
-				<li data-tags='Cat 1, Cat 2, Cat 3'> <img src='img/pic10.gif'> </li>
-			</ul>
-		</div>
+    </head>
+    <body>
+		<header>
+			<div class="container">
+				<nav id="navbar"></nav>
+			</div>
 
-		<hr>
-		<footer>
-			<div class='container'> &copy 2017 Demo by Hau Nguyen - hautn.nz@gmail.com</div>
-		</footer>
-
+		</header>
 		
-	</section>
+		<section id="main">
+			<div class="container">
+				<ul id="gallery">
 
+					<li data-tags="Category 1, Category 2">
+					<a class="fancybox" rel="group" href="img/pic1.gif"><img src="img/pic1.gif"></a>
+					</li>
 
+					<li data-tags="Category 1, Category 3">
+					<a class="fancybox" rel="group" href="img/pic2.gif"><img src="img/pic2.gif"></a>
+					</li>
 
-	
-</body>
-</html>
+					<li data-tags="Category 2, Category 3">
+					<a class="fancybox" rel="group" href="img/pic3.gif"><img src="img/pic3.gif"></a>
+					</li>
+
+					<li data-tags="Category 1, Category 2, Category 3">
+					<a class="fancybox" rel="group" href="img/pic4.gif"><img src="img/pic4.gif">
+					</li>
+
+					<li data-tags="Category 1">
+					<a class="fancybox" rel="group" href="img/pic5.gif"><img src="img/pic5.gif"></a></li>
+					
+					<li data-tags="Category 2">
+					<a class="fancybox" rel="group" href="img/pic6.gif"><img src="img/pic6.gif"></a>
+					</li>
+
+					<li data-tags="Category 3">
+					<a class="fancybox" rel="group" href="img/pic7.gif"><img src="img/pic7.gif"></a>
+					</li>
+
+					<li data-tags="Category 1, Category 2">
+					<a class="fancybox" rel="group" href="img/pic8.gif"><img src="img/pic8.gif"></a>
+					</li>
+
+					<li data-tags="Category 1, Category 3">
+					<a class="fancybox" rel="group" href="img/pic9.gif"><img src="img/pic9.gif"></a>
+					</li>
+
+					<li data-tags="Category 2, Category 3">
+					<a class="fancybox" rel="group" href="img/pic10.gif"><img src="img/pic10.gif"></a>
+					</li>		
+
+				</ul>
+			</div><!-- container -->
+			<hr>
+			<footer>
+				<div class="container">
+					<p>&copy; 2017 Demo by Hau - hautn.nz@gmail.com</p>
+				</div><!-- container -->
+			</footer>
+		</section>
+		
+		<!-- Include JQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Quicksand Plugin -->
+		<script src="js/jquery.quicksand.js"></script>
+		<!-- Fancybox js -->
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox-buttons.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<!-- Include Custom JS-->
+		<script src="js/script.js"></script>
+		<script>
+			//Call Fancybox
+			$(document).ready(function(){
+				$(".fancybox").fancybox();
+			});
+		</script>
+    </body>
+</html>s
